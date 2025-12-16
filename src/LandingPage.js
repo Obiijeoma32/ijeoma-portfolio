@@ -6,6 +6,7 @@ import Works from "./components/Works";
 import Socials from "./components/Socials";
 import { ReactComponent as Mail } from "./assets/mail.svg";
 import { ReactComponent as Arrow } from "./assets/arrow-up-right-01.svg";
+import Recommendation from "./components/Recommendation";
 
 export default function LandingPage() {
   const [darkMode, setDarkMode] = useState(false);
@@ -40,11 +41,14 @@ export default function LandingPage() {
 
           <Skills darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <Tools darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          <div className=" w-full h-fit 100:flex lg:hidden">
+            <Recommendation darkMode={darkMode} />
+          </div>
           <Socials className=" 100:hidden lg:flex" darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-          <div className=" 100:flex lg:hidden 100:flex-col-reverse lg:flex-row w-full justify-start items-center flex gap-3">
+          <div className=" 100:flex lg:hidden 100:flex-col-reverse sm:flex-row w-full justify-start items-center flex gap-3">
             <a
               href="https://contra.com/ijeoma_obi_gi5an57m/work?r=ijeoma_obi_gi5an57m"
-              className={`border-[2px] text-[16px] w-full h-fit font-medium  flex gap-2 justify-center items-center py-4 px-8 rounded-full ${
+              className={`border-[2px] text-[16px] 100:w-full sm:w-fit h-fit font-medium  flex gap-2 justify-center items-center py-4 px-8 rounded-full ${
                 darkMode ? "bg-[#212122] border-[#E6BF1A] hover:bg-[#373633] text-[#CFCFCF]" : "text-[#363638]  bg-[#FFFCFC]  border-[#FAEBA5] hover:bg-[#FAE9A5]"
               }`}
             >
@@ -83,6 +87,9 @@ export default function LandingPage() {
             </a>
           </div>
         </div>
+      </div>
+      <div className=" 100:hidden lg:flex">
+        <Recommendation darkMode={darkMode} />
       </div>
     </div>
   );

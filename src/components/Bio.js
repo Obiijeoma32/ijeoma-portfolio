@@ -39,7 +39,7 @@ export default function Bio({ darkMode, toggleDarkMode }) {
             darkMode ? "bg-[#D59F1A] border-[#E6BF1A] hover:bg-[#ae8300] text-[#121212]" : "text-[#333333]  bg-[#FFB601]  border-[#FAE9A5] hover:bg-[#FAE9A5]"
           }`}
         >
-          <Mail className=" 100:hidden iphone:flex" /> Contact Me
+          <Mail className=" 100:hidden phone:flex" /> Contact Me
         </a>
       </div>
       <div className=" flex flex-col gap-8 w-full justify-start items-start">
