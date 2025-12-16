@@ -7,8 +7,24 @@ export default function Works({ darkMode }) {
   const [work, setWork] = useState("selected-works");
 
   const menu = [
-    { id: 1, label: "Selected Works", value: "selected-works" },
-    { id: 2, label: "All Projects", value: "all-projects" },
+    {
+      id: 1,
+      label: (
+        <span className=" gap-1 flex justify-center items-center">
+          Selected <span className=" 100:hidden sm:flex">Works</span>
+        </span>
+      ),
+      value: "selected-works",
+    },
+    {
+      id: 2,
+      label: (
+        <span className=" gap-1 flex justify-center items-center">
+          <span className=" 100:hidden sm:flex">All</span> <span>Projects</span>
+        </span>
+      ),
+      value: "all-projects",
+    },
     { id: 3, label: "Illustrations", value: "illustrations" },
   ];
 
