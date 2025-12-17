@@ -55,7 +55,7 @@ export default function Recommendation({ darkMode }) {
     <div className={`w-full h-fit gap-[16px] flex justify-start items-center flex-col rounded-[24px] p-6 transition-colors ${darkMode ? "bg-[#212122]" : "bg-[#FFFCFC] "}`}>
       <div className={` w-full flex justify-start items-start text-[16px] font-medium ${darkMode ? " text-[#9E9E9F]" : " text-[#363638]"}`}>Recommendations</div>
       {/* <div className="w-full flex justify-start items-start gap-4 overflow-x-scroll"> */}
-      <div ref={sliderRef} onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} className="w-full flex gap-4 overflow-x-scroll scrollbar-hide">
+      <div ref={sliderRef} onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} className="w-full flex gap-4 overflow-x-scroll scrollbar-hide no-scrollbar no-scrollbar ">
         {people.map((item, index) => (
           <div key={index} className={`p-6 min-w-[280px] 100:flex-col md:flex-row h-fit lg:min-w-[500px] rounded-[24px] border flex gap-4 ${darkMode ? "border-[#3D3D40] bg-[#282829]" : "border-[#E8E8E8] bg-[#F5F5F5]"}`}>
             {" "}
