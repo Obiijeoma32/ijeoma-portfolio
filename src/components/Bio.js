@@ -19,9 +19,9 @@ export default function Bio({ darkMode, toggleDarkMode }) {
     <div className={`w-full h-fit gap-[48px] flex justify-start items-center flex-col rounded-[24px] p-6 transition-colors ${darkMode ? "bg-[#212122]" : "bg-[#FFFCFC] "}`}>
       <div className=" w-full justify-between items-center flex">
         <div className=" w-fit flex justify-start items-center  gap-4">
-          <button className={` 100:flex lg:hidden w-fit`}>
+          {/* <button className={` 100:flex lg:hidden w-fit`}>
             <Menu className={` rotate-180  ${darkMode ? "text-[#BFBFC0]" : " text-[#2F2F31]"}`} />
-          </button>
+          </button> */}
           <div className={` w-fit 100:px-2.5 md:px-4 py-2 rounded-[24px] text-[14px] h-fit flex gap-2 justify-center  items-center font-medium ${darkMode ? "bg-[#2E5E25] text-[#C5C5C7]" : "bg-[#E8F2E6] text-[#3D3D40]"}`}>
             <span className={`${darkMode ? " bg-[#4D9644]  border-[#BBEDB4]" : " bg-[#65A65D] border-[#BBEDB4]"}   border-2 w-2.5 h-2.5 rounded-full  `} />{" "}
             <div className={`justify-center gap-1 w-fit h-fit item-center text-center flex 100:hidden phone:flex`}>

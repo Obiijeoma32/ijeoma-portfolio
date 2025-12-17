@@ -36,19 +36,19 @@ export default function Recommendation({ darkMode }) {
       id: 2,
       name: " – Daniel Ikekwem",
       pic: daniel,
-      desc: "I’ve had the privilege of working closely with Ijeoma on multiple projects, and she’s one of the most exceptional UI/UX designers I’ve ever collaborated with. Her creativity, attention to detail, and deep understanding of user experience consistently elevate every product we work on. She has a rare ability to turn abstract ideas into clean, intuitive, and visually stunning designs that truly connect with users. Beyond her technical skills, Ijeoma is reliable, communicative, and an absolute joy to work with. Anyone who gets the chance to collaborate with her will see her dedication and passion shine through in every pixel. Highly recommended! 🌟",
+      desc: "I’ve had the privilege of working closely with Ijeoma on multiple projects, and she’s one of the most exceptional UI/UX designers I’ve ever collaborated with. Her creativity, attention to detail, and deep understanding of user experience consistently elevate every product we work on. She has a rare ability to turn abstract ideas into clean, intuitive, and visually stunning designs that truly connect with users. Beyond her technical skills, Ijeoma is reliable, communicative, and an absolute joy to work with.",
     },
     {
       id: 3,
       name: "– Kenneth Ofili",
       pic: kenneth,
-      desc: "I had the privilege of working alongside Ijeoma for about a year, and she truly stands out as a remarkable colleague. Not only does she consistently deliver top-notch work, but she brings such a positive energy and strong work ethic to everything she does. Ijeoma’s expertise in user interface design and front-end development really shone through during our time together. She has a natural talent for problem-solving, which made her an essential part of our team. When we were working on the website project, her keen eye for detail and dedication ensured that everything was completed ahead of schedule and exceeded our expectations. What I appreciate most about Ijeoma is her willingness to collaborate and support her teammates. She’s always ready to jump in and help out wherever needed, making her a true team player. Her professionalism, combined with her technical skills and positive attitude, makes her a valuable asset to any organization. I wholeheartedly recommend Ijeoma to anyone looking for someone who not only brings expertise but also a genuine enthusiasm for her work. It was an absolute pleasure working with her, and I look forward to the possibility of collaborating again in the future.",
+      desc: "I had the privilege of working alongside Ijeoma for about a year, and she truly stands out as a remarkable colleague. Not only does she consistently deliver top-notch work, but she brings such a positive energy and strong work ethic to everything she does. Ijeoma’s expertise in user interface design and front-end development really shone through during our time together. She has a natural talent for problem-solving, which made her an essential part of our team. ",
     },
     {
       id: 4,
       name: "– Ogechi Amaefule",
       pic: ogechi,
-      desc: "I’ve known IJEOMA for a while now, and one thing that stands out is her creative eye. Even before she became a UX/UI designer, she’s always had that natural ability to make things look and feel right. Watching her grow into such a thoughtful designer has been inspiring. She has this rare balance, she’s deeply artistic but also incredibly logical in how she approaches user experience. Her designs are clean, functional, and full of intention. I may be biased as her friend, but trust me, her work speaks for itself. Any team would be lucky to have a designer with her skill, dedication, and calm professionalism.",
+      desc: "I’ve known IJEOMA for a while now, and one thing that stands out is her creative eye. Even before she became a UX/UI designer, she’s always had that natural ability to make things look and feel right. Watching her grow into such a thoughtful designer has been inspiring. She has this rare balance, she’s deeply artistic but also incredibly logical in how she approaches user experience. Her designs are clean, functional, and full of intention. ",
     },
   ];
   return (

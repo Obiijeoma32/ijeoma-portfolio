@@ -11,20 +11,20 @@ export default function Works({ darkMode }) {
       id: 1,
       label: (
         <span className=" gap-1 flex justify-center items-center">
-          Selected <span className=" 100:hidden sm:flex">Works</span>
+          Selected <span className=" ">Works</span>
         </span>
       ),
       value: "selected-works",
     },
-    {
-      id: 2,
-      label: (
-        <span className=" gap-1 flex justify-center items-center">
-          <span className=" 100:hidden sm:flex">All</span> <span>Projects</span>
-        </span>
-      ),
-      value: "all-projects",
-    },
+    // {
+    //   id: 2,
+    //   label: (
+    //     <span className=" gap-1 flex justify-center items-center">
+    //       <span className=" 100:hidden sm:flex">All</span> <span>Projects</span>
+    //     </span>
+    //   ),
+    //   value: "all-projects",
+    // },
     { id: 3, label: "Illustrations", value: "illustrations" },
   ];
 

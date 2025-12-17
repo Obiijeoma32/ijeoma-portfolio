@@ -139,15 +139,7 @@ export default function Selected() {
       </div>
 
       {/* CONTROLS */}
-      {/* <div className="relative z-10 flex justify-between p-4">
-        <button onClick={prevVideo} className="bg-white p-2 rounded-full">
-          <ArrowLeft />
-        </button>
-        <button onClick={nextVideo} className="bg-white p-2 rounded-full">
-          <ArrowRight />
-        </button>
-      </div> */}
-      <div className="relative z-10 flex justify-between w-full ">
+      <div className="relative z-10 flex justify-between items-center w-full ">
         {" "}
         <button onClick={prevVideo} className={`p-2 rounded-full transition bg-opacity-40  text-[#212122]  bg-[#CBC8C7]`}>
           <ArrowLeft />{" "}
@@ -165,7 +157,7 @@ export default function Selected() {
             <button key={index} onClick={() => setCurrentIndex(index)} className={`w-2 h-2 rounded-full ${index === currentIndex ? "bg-white scale-125" : "bg-white/40"}`} />
           ))}
         </div>
-        <a href={videos[currentIndex].url} target="_blank" rel="noopener noreferrer" className="inline-block bg-opacity-80  text-[#212122]  bg-[#CBC8C7] px-4 py-2 rounded-full text-sm font-medium">
+        <a href={videos[currentIndex].url} target="_blank" rel="noopener noreferrer" className="inline-block bg-opacity-80  text-[#212122]  bg-[#CBC8C7] px-4 py-2 rounded-full 100:text-xs md:text-sm font-medium">
           View Project
         </a>
       </div>
