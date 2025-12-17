@@ -1,97 +1,11 @@
-// import { useRef, useState, useEffect } from "react";
-// import { ReactComponent as ArrowRight } from "../../assets/arrow-right-01.svg";
-// import { ReactComponent as ArrowLeft } from "../../assets/arrow-left-01.svg";
-// import video3 from "../../assets/Videos/Animated-iPhone-mockups.mp4";
-// import video2 from "../../assets/Videos/Scene.mp4";
-// import video1 from "../../assets/Videos/Showreel-Grid-Mobile-[remix].mp4";
-
-// export default function Selected({ darkMode }) {
-//   const videos = [
-//     {
-//       id: 1,
-//       video: video1,
-//       url: "https://on.contra.com/jqkrfJ",
-//     },
-//     {
-//       id: 2,
-//       video: video2,
-//       url: "https://on.contra.com/jqkrfJ",
-//     },
-//     {
-//       id: 3,
-//       video: video3,
-//       url: "https://on.contra.com/jqkrfJ",
-//     },
-//   ];
-//   const [currentIndex, setCurrentIndex] = useState(0);
-//   const videoRef = useRef(null);
-
-//   // Ensure replay & autoplay when video changes
-//   useEffect(() => {
-//     const video = videoRef.current;
-//     if (!video) return;
-
-//     video.load(); // important
-//     video.play().catch(() => {}); // avoids autoplay interruption error
-//   }, [currentIndex]);
-
-//   const nextVideo = () => {
-//     setCurrentIndex((prev) => (prev + 1) % videos.length);
-//   };
-
-//   const prevVideo = () => {
-//     setCurrentIndex((prev) => (prev === 0 ? videos.length - 1 : prev - 1));
-//   };
-
-//   return (
-//     <div className="relative 100:p-2 sm:p-6 flex flex-col justify-between w-full 100:h-[400px] md:h-[600px] overflow-hidden rounded-[24px]">
-//       {/* Video */}
-//       {/* <video ref={videoRef} src={videos[currentIndex]} loop muted playsInline autoPlay className="absolute rounded-[24px] inset-0 w-full h-full object-cover transition-opacity duration-300" /> */}
-//       <video ref={videoRef} src={videos[currentIndex].src} loop muted playsInline autoPlay className="absolute inset-0 w-full h-full object-cover rounded-[24px]" />
-//       <div className=" w-full">
-//         {" "}
-//         <button className=" w-fit ">
-//           <a
-//             href={videos.map((item) => (
-//               <div>{item.url}</div>
-//             ))}
-//           >
-//             view Project
-//           </a>
-//         </button>
-//       </div>
-//       {/* Controls */}
-//       <div className="relative z-10 flex justify-between w-full ">
-//         <button onClick={prevVideo} className={`p-2 rounded-full transition bg-opacity-40  text-[#212122]  bg-[#CBC8C7]`}>
-//           <ArrowLeft />
-//         </button>
-
-//         <button onClick={nextVideo} className={`p-2 rounded-full transition bg-opacity-40  text-[#212122]  bg-[#CBC8C7]`}>
-//           <ArrowRight />
-//         </button>
-//       </div>
-
-//       {/* Indicators */}
-//       <div className="relative z-10 flex justify-center gap-2.5">
-//         {videos.map((_, index) => (
-//           <button
-//             key={index}
-//             onClick={() => setCurrentIndex(index)}
-//             aria-label={`Go to video ${index + 1}`}
-//             className={`w-2 h-2 rounded-full transition-all duration-200
-//               ${index === currentIndex ? "bg-white scale-125" : "bg-white/40 hover:bg-white/70"}`}
-//           />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
 import { useRef, useState, useEffect } from "react";
 import { ReactComponent as ArrowRight } from "../../assets/arrow-right-01.svg";
 import { ReactComponent as ArrowLeft } from "../../assets/arrow-left-01.svg";
 import video3 from "../../assets/Videos/Animated-iPhone-mockups.mp4";
 import video2 from "../../assets/Videos/Scene.mp4";
 import video1 from "../../assets/Videos/Showreel-Grid-Mobile-[remix].mp4";
+import video4 from "../../assets/Videos/Penthry.mp4";
+import video5 from "../../assets/Videos/ije.mp4";
 
 export default function Selected() {
   const videos = [
@@ -105,10 +19,21 @@ export default function Selected() {
       video: video2,
       url: "https://apps.apple.com/ng/app/stay-assist/id6749885496",
     },
+
+    {
+      id: 4,
+      video: video4,
+      url: "https://penthreymain.vercel.app",
+    },
     {
       id: 3,
       video: video3,
       url: "https://on.contra.com/jqkrfJ",
+    },
+    {
+      id: 5,
+      video: video5,
+      url: "https://www.ijefund.com/",
     },
   ];
 

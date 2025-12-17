@@ -37,7 +37,7 @@ export default function Illustration({ darkMode }) {
         <img key={index} src={item} alt={`Illustration ${index + 1}`} className="w-full h-[200px] object-cover rounded-lg" />
       ))} */}
       {illustrations.map((item) => (
-        <div key={item.id} className="relative group w-full h-[200px] rounded-2xl overflow-hidden">
+        <div key={item.id} className="relative group w-full h-[165px] rounded-2xl overflow-hidden">
           {/* Main Image */}
           <img src={item.main} alt="" className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0" />
 
